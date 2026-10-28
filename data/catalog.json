@@ -1,0 +1,76 @@
+{
+  "city": "Hong Kong",
+  "note": "Hand-written local catalog of public places. Not a Qloo result, not a partner listing, and not checked for today's hours or showtimes.",
+  "places": [
+    {
+      "id": "victoria-park",
+      "name": "Victoria Park",
+      "kind": "park",
+      "area": "Causeway Bay",
+      "note": "Public park with lawns and paths."
+    },
+    {
+      "id": "hong-kong-park",
+      "name": "Hong Kong Park",
+      "kind": "park",
+      "area": "Admiralty",
+      "note": "Shaded park with ponds, an aviary, and the tea-ware museum."
+    },
+    {
+      "id": "kowloon-park",
+      "name": "Kowloon Park",
+      "kind": "park",
+      "area": "Tsim Sha Tsui",
+      "note": "Public park between Nathan Road and the harbour."
+    },
+    {
+      "id": "hk-museum-of-art",
+      "name": "Hong Kong Museum of Art",
+      "kind": "museum",
+      "area": "Tsim Sha Tsui",
+      "note": "Public art museum on the Tsim Sha Tsui waterfront."
+    },
+    {
+      "id": "hk-museum-of-history",
+      "name": "Hong Kong Museum of History",
+      "kind": "museum",
+      "area": "Tsim Sha Tsui",
+      "note": "Public history museum near the Science Museum."
+    },
+    {
+      "id": "m-plus",
+      "name": "M+",
+      "kind": "museum",
+      "area": "West Kowloon",
+      "note": "Visual culture museum in the West Kowloon Cultural District."
+    },
+    {
+      "id": "flagstaff-house",
+      "name": "Flagstaff House Museum of Tea Ware",
+      "kind": "museum",
+      "area": "Admiralty",
+      "note": "Small museum inside Hong Kong Park."
+    },
+    {
+      "id": "noc-coffee",
+      "name": "NOC Coffee",
+      "kind": "cafe",
+      "area": "Sheung Wan",
+      "note": "Hand-listed cafe. Not a Qloo partner and not a live opening-hours check."
+    },
+    {
+      "id": "cupping-room",
+      "name": "The Cupping Room",
+      "kind": "cafe",
+      "area": "Sheung Wan",
+      "note": "Hand-listed cafe. Not a Qloo partner and not a live opening-hours check."
+    },
+    {
+      "id": "broadway-cinematheque",
+      "name": "Broadway Cinematheque",
+      "kind": "cinema",
+      "area": "Yau Ma Tei",
+      "note": "Cinema in Yau Ma Tei. Showtimes are not checked by this catalog."
+    }
+  ]
+}

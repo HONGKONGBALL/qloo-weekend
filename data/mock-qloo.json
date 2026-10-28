@@ -1,0 +1,678 @@
+{
+  "note": "Self-written demo fixture. Not a Qloo response.",
+  "search": {
+    "In the Mood for Love": [
+      {
+        "entity_id": "MOCK-MOVIE-ITMFL",
+        "name": "In the Mood for Love",
+        "types": ["urn:entity:movie"]
+      }
+    ],
+    "Hong Kong Park": [
+      {
+        "entity_id": "MOCK-PLACE-HKPARK",
+        "name": "Hong Kong Park",
+        "types": ["urn:entity:place"]
+      }
+    ],
+    "Hong Kong Museum of Art": [
+      {
+        "entity_id": "MOCK-PLACE-HKMOA",
+        "name": "Hong Kong Museum of Art",
+        "types": ["urn:entity:place"]
+      }
+    ],
+    "tea house": [
+      {
+        "entity_id": "MOCK-PLACE-TEA",
+        "name": "Flagstaff House Museum of Tea Ware",
+        "types": ["urn:entity:place"]
+      }
+    ],
+    "jazz": [
+      {
+        "entity_id": "MOCK-MUSIC-JAZZ",
+        "name": "Jazz",
+        "types": ["urn:entity:artist"]
+      }
+    ],
+    "default": [
+      {
+        "entity_id": "MOCK-PLACE-DEFAULT",
+        "name": "Victoria Park",
+        "types": ["urn:entity:place"]
+      }
+    ]
+  },
+  "tags": {
+    "park": [
+      {
+        "id": "MOCK-TAG-PARK",
+        "name": "park",
+        "type": "urn:tag:genre:place"
+      }
+    ],
+    "museum": [
+      {
+        "id": "MOCK-TAG-MUSEUM",
+        "name": "museum",
+        "type": "urn:tag:genre:place"
+      }
+    ],
+    "movie theater": [
+      {
+        "id": "MOCK-TAG-CINEMA",
+        "name": "movie theater",
+        "type": "urn:tag:category:place"
+      }
+    ],
+    "quiet": [
+      {
+        "id": "MOCK-TAG-QUIET",
+        "name": "quiet",
+        "type": "urn:tag:ambience:qloo"
+      }
+    ],
+    "cafe": [
+      {
+        "id": "MOCK-TAG-CAFE",
+        "name": "cafe",
+        "type": "urn:tag:category:place"
+      }
+    ],
+    "outdoors": [
+      {
+        "id": "MOCK-TAG-OUTDOORS",
+        "name": "outdoors",
+        "type": "urn:tag:genre:place"
+      }
+    ],
+    "default": [
+      {
+        "id": "MOCK-TAG-PLACE",
+        "name": "place",
+        "type": "urn:tag:category:place"
+      }
+    ]
+  },
+  "insights": {
+    "byTag": {
+      "MOCK-TAG-PARK": [
+        {
+          "entity_id": "MOCK-PLACE-VICTORIA",
+          "name": "Victoria Park",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:park",
+          "query": { "affinity": 0.91 },
+          "properties": {
+            "address": "Causeway Bay, Hong Kong",
+            "hours": {
+              "saturday": { "open": "06:00", "close": "23:00" }
+            }
+          },
+          "tags": [{ "name": "park" }, { "name": "outdoors" }]
+        },
+        {
+          "entity_id": "MOCK-PLACE-HKPARK",
+          "name": "Hong Kong Park",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:park",
+          "query": { "affinity": 0.88 },
+          "properties": {
+            "address": "Admiralty, Hong Kong",
+            "hours": {
+              "saturday": { "open": "06:00", "close": "23:00" }
+            }
+          },
+          "tags": [{ "name": "park" }, { "name": "outdoors" }]
+        },
+        {
+          "entity_id": "MOCK-PLACE-KOWLOON",
+          "name": "Kowloon Park",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:park",
+          "query": { "affinity": 0.84 },
+          "properties": {
+            "address": "Tsim Sha Tsui, Hong Kong",
+            "hours": {
+              "saturday": { "open": "05:00", "close": "24:00" }
+            }
+          },
+          "tags": [{ "name": "park" }]
+        }
+      ],
+      "MOCK-TAG-MUSEUM": [
+        {
+          "entity_id": "MOCK-PLACE-HKMOA",
+          "name": "Hong Kong Museum of Art",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:museum",
+          "query": { "affinity": 0.93 },
+          "properties": {
+            "address": "Tsim Sha Tsui, Hong Kong",
+            "hours": {
+              "saturday": { "open": "10:00", "close": "18:00" }
+            }
+          },
+          "tags": [{ "name": "museum" }]
+        },
+        {
+          "entity_id": "MOCK-PLACE-HISTORY",
+          "name": "Hong Kong Museum of History",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:museum",
+          "query": { "affinity": 0.87 },
+          "properties": {
+            "address": "Tsim Sha Tsui, Hong Kong",
+            "hours": {
+              "saturday": { "open": "10:00", "close": "19:00" }
+            }
+          },
+          "tags": [{ "name": "museum" }]
+        },
+        {
+          "entity_id": "MOCK-PLACE-MPLUS",
+          "name": "M+",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:museum",
+          "query": { "affinity": 0.9 },
+          "properties": {
+            "address": "West Kowloon, Hong Kong",
+            "hours": {
+              "saturday": { "open": "10:00", "close": "18:00" }
+            }
+          },
+          "tags": [{ "name": "museum" }, { "name": "gallery" }]
+        }
+      ],
+      "MOCK-TAG-CINEMA": [
+        {
+          "entity_id": "MOCK-PLACE-BC",
+          "name": "Broadway Cinematheque",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:cinema",
+          "query": { "affinity": 0.89 },
+          "properties": {
+            "address": "Yau Ma Tei, Hong Kong",
+            "hours": {
+              "saturday": { "open": "11:00", "close": "23:30" }
+            }
+          },
+          "tags": [{ "name": "cinema" }, { "name": "movie theater" }]
+        },
+        {
+          "entity_id": "MOCK-PLACE-MPLUS",
+          "name": "M+",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:museum",
+          "query": { "affinity": 0.72 },
+          "properties": {
+            "address": "West Kowloon, Hong Kong",
+            "hours": {
+              "saturday": { "open": "10:00", "close": "18:00" }
+            }
+          },
+          "tags": [{ "name": "museum" }]
+        }
+      ],
+      "MOCK-TAG-QUIET": [
+        {
+          "entity_id": "MOCK-PLACE-HKPARK",
+          "name": "Hong Kong Park",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:park",
+          "query": { "affinity": 0.86 },
+          "properties": {
+            "address": "Admiralty, Hong Kong",
+            "hours": {
+              "saturday": { "open": "06:00", "close": "23:00" }
+            }
+          },
+          "tags": [{ "name": "park" }, { "name": "quiet" }]
+        },
+        {
+          "entity_id": "MOCK-PLACE-TEA",
+          "name": "Flagstaff House Museum of Tea Ware",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:museum",
+          "query": { "affinity": 0.81 },
+          "properties": {
+            "address": "Admiralty, Hong Kong",
+            "hours": {
+              "saturday": { "open": "10:00", "close": "18:00" }
+            }
+          },
+          "tags": [{ "name": "museum" }, { "name": "quiet" }]
+        },
+        {
+          "entity_id": "MOCK-PLACE-CUPPING",
+          "name": "The Cupping Room",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:cafe",
+          "query": { "affinity": 0.78 },
+          "properties": {
+            "address": "Sheung Wan, Hong Kong",
+            "hours": {
+              "saturday": { "open": "09:00", "close": "18:00" }
+            }
+          },
+          "tags": [{ "name": "cafe" }, { "name": "quiet" }]
+        }
+      ],
+      "MOCK-TAG-CAFE": [
+        {
+          "entity_id": "MOCK-PLACE-NOC",
+          "name": "NOC Coffee",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:cafe",
+          "query": { "affinity": 0.85 },
+          "properties": {
+            "address": "Sheung Wan, Hong Kong",
+            "hours": {
+              "saturday": { "open": "08:00", "close": "18:00" }
+            }
+          },
+          "tags": [{ "name": "cafe" }]
+        },
+        {
+          "entity_id": "MOCK-PLACE-CUPPING",
+          "name": "The Cupping Room",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:cafe",
+          "query": { "affinity": 0.83 },
+          "properties": {
+            "address": "Sheung Wan, Hong Kong",
+            "hours": {
+              "saturday": { "open": "09:00", "close": "18:00" }
+            }
+          },
+          "tags": [{ "name": "cafe" }]
+        }
+      ],
+      "MOCK-TAG-OUTDOORS": [
+        {
+          "entity_id": "MOCK-PLACE-VICTORIA",
+          "name": "Victoria Park",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:park",
+          "query": { "affinity": 0.9 },
+          "properties": {
+            "address": "Causeway Bay, Hong Kong",
+            "hours": {
+              "saturday": { "open": "06:00", "close": "23:00" }
+            }
+          },
+          "tags": [{ "name": "park" }, { "name": "outdoors" }]
+        },
+        {
+          "entity_id": "MOCK-PLACE-HKPARK",
+          "name": "Hong Kong Park",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:park",
+          "query": { "affinity": 0.87 },
+          "properties": {
+            "address": "Admiralty, Hong Kong",
+            "hours": {
+              "saturday": { "open": "06:00", "close": "23:00" }
+            }
+          },
+          "tags": [{ "name": "park" }, { "name": "outdoors" }]
+        }
+      ],
+      "MOCK-TAG-PLACE": [
+        {
+          "entity_id": "MOCK-PLACE-VICTORIA",
+          "name": "Victoria Park",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:park",
+          "query": { "affinity": 0.8 },
+          "properties": {
+            "address": "Causeway Bay, Hong Kong",
+            "hours": {
+              "saturday": { "open": "06:00", "close": "23:00" }
+            }
+          },
+          "tags": [{ "name": "park" }]
+        },
+        {
+          "entity_id": "MOCK-PLACE-HKMOA",
+          "name": "Hong Kong Museum of Art",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:museum",
+          "query": { "affinity": 0.79 },
+          "properties": {
+            "address": "Tsim Sha Tsui, Hong Kong",
+            "hours": {
+              "saturday": { "open": "10:00", "close": "18:00" }
+            }
+          },
+          "tags": [{ "name": "museum" }]
+        },
+        {
+          "entity_id": "MOCK-PLACE-NOC",
+          "name": "NOC Coffee",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:cafe",
+          "query": { "affinity": 0.77 },
+          "properties": {
+            "address": "Sheung Wan, Hong Kong",
+            "hours": {
+              "saturday": { "open": "08:00", "close": "18:00" }
+            }
+          },
+          "tags": [{ "name": "cafe" }]
+        }
+      ]
+    },
+    "byEntity": {
+      "MOCK-MOVIE-ITMFL": [
+        {
+          "entity_id": "MOCK-PLACE-BC",
+          "name": "Broadway Cinematheque",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:cinema",
+          "query": { "affinity": 0.94 },
+          "properties": {
+            "address": "Yau Ma Tei, Hong Kong",
+            "hours": {
+              "saturday": { "open": "11:00", "close": "23:30" }
+            }
+          },
+          "tags": [{ "name": "cinema" }]
+        },
+        {
+          "entity_id": "MOCK-PLACE-HKMOA",
+          "name": "Hong Kong Museum of Art",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:museum",
+          "query": { "affinity": 0.82 },
+          "properties": {
+            "address": "Tsim Sha Tsui, Hong Kong",
+            "hours": {
+              "saturday": { "open": "10:00", "close": "18:00" }
+            }
+          },
+          "tags": [{ "name": "museum" }]
+        },
+        {
+          "entity_id": "MOCK-PLACE-KOWLOON",
+          "name": "Kowloon Park",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:park",
+          "query": { "affinity": 0.76 },
+          "properties": {
+            "address": "Tsim Sha Tsui, Hong Kong",
+            "hours": {
+              "saturday": { "open": "05:00", "close": "24:00" }
+            }
+          },
+          "tags": [{ "name": "park" }]
+        }
+      ],
+      "MOCK-MUSIC-JAZZ": [
+        {
+          "entity_id": "MOCK-PLACE-NOC",
+          "name": "NOC Coffee",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:cafe",
+          "query": { "affinity": 0.88 },
+          "properties": {
+            "address": "Sheung Wan, Hong Kong",
+            "hours": {
+              "saturday": { "open": "08:00", "close": "18:00" }
+            }
+          },
+          "tags": [{ "name": "cafe" }]
+        },
+        {
+          "entity_id": "MOCK-PLACE-HKPARK",
+          "name": "Hong Kong Park",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:park",
+          "query": { "affinity": 0.74 },
+          "properties": {
+            "address": "Admiralty, Hong Kong",
+            "hours": {
+              "saturday": { "open": "06:00", "close": "23:00" }
+            }
+          },
+          "tags": [{ "name": "park" }]
+        },
+        {
+          "entity_id": "MOCK-PLACE-MPLUS",
+          "name": "M+",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:museum",
+          "query": { "affinity": 0.8 },
+          "properties": {
+            "address": "West Kowloon, Hong Kong",
+            "hours": {
+              "saturday": { "open": "10:00", "close": "18:00" }
+            }
+          },
+          "tags": [{ "name": "museum" }]
+        }
+      ],
+      "MOCK-PLACE-HKPARK": [
+        {
+          "entity_id": "MOCK-PLACE-HKPARK",
+          "name": "Hong Kong Park",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:park",
+          "query": { "affinity": 0.95 },
+          "properties": {
+            "address": "Admiralty, Hong Kong",
+            "hours": {
+              "saturday": { "open": "06:00", "close": "23:00" }
+            }
+          },
+          "tags": [{ "name": "park" }]
+        },
+        {
+          "entity_id": "MOCK-PLACE-TEA",
+          "name": "Flagstaff House Museum of Tea Ware",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:museum",
+          "query": { "affinity": 0.84 },
+          "properties": {
+            "address": "Admiralty, Hong Kong",
+            "hours": {
+              "saturday": { "open": "10:00", "close": "18:00" }
+            }
+          },
+          "tags": [{ "name": "museum" }]
+        },
+        {
+          "entity_id": "MOCK-PLACE-NOC",
+          "name": "NOC Coffee",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:cafe",
+          "query": { "affinity": 0.7 },
+          "properties": {
+            "address": "Sheung Wan, Hong Kong",
+            "hours": {
+              "saturday": { "open": "08:00", "close": "18:00" }
+            }
+          },
+          "tags": [{ "name": "cafe" }]
+        }
+      ],
+      "MOCK-PLACE-HKMOA": [
+        {
+          "entity_id": "MOCK-PLACE-HKMOA",
+          "name": "Hong Kong Museum of Art",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:museum",
+          "query": { "affinity": 0.96 },
+          "properties": {
+            "address": "Tsim Sha Tsui, Hong Kong",
+            "hours": {
+              "saturday": { "open": "10:00", "close": "18:00" }
+            }
+          },
+          "tags": [{ "name": "museum" }]
+        },
+        {
+          "entity_id": "MOCK-PLACE-HISTORY",
+          "name": "Hong Kong Museum of History",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:museum",
+          "query": { "affinity": 0.88 },
+          "properties": {
+            "address": "Tsim Sha Tsui, Hong Kong",
+            "hours": {
+              "saturday": { "open": "10:00", "close": "19:00" }
+            }
+          },
+          "tags": [{ "name": "museum" }]
+        },
+        {
+          "entity_id": "MOCK-PLACE-MPLUS",
+          "name": "M+",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:museum",
+          "query": { "affinity": 0.85 },
+          "properties": {
+            "address": "West Kowloon, Hong Kong",
+            "hours": {
+              "saturday": { "open": "10:00", "close": "18:00" }
+            }
+          },
+          "tags": [{ "name": "museum" }]
+        }
+      ],
+      "MOCK-PLACE-TEA": [
+        {
+          "entity_id": "MOCK-PLACE-TEA",
+          "name": "Flagstaff House Museum of Tea Ware",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:museum",
+          "query": { "affinity": 0.92 },
+          "properties": {
+            "address": "Admiralty, Hong Kong",
+            "hours": {
+              "saturday": { "open": "10:00", "close": "18:00" }
+            }
+          },
+          "tags": [{ "name": "museum" }, { "name": "quiet" }]
+        },
+        {
+          "entity_id": "MOCK-PLACE-HKPARK",
+          "name": "Hong Kong Park",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:park",
+          "query": { "affinity": 0.9 },
+          "properties": {
+            "address": "Admiralty, Hong Kong",
+            "hours": {
+              "saturday": { "open": "06:00", "close": "23:00" }
+            }
+          },
+          "tags": [{ "name": "park" }]
+        },
+        {
+          "entity_id": "MOCK-PLACE-CUPPING",
+          "name": "The Cupping Room",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:cafe",
+          "query": { "affinity": 0.75 },
+          "properties": {
+            "address": "Sheung Wan, Hong Kong",
+            "hours": {
+              "saturday": { "open": "09:00", "close": "18:00" }
+            }
+          },
+          "tags": [{ "name": "cafe" }]
+        }
+      ],
+      "MOCK-PLACE-DEFAULT": [
+        {
+          "entity_id": "MOCK-PLACE-VICTORIA",
+          "name": "Victoria Park",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:park",
+          "query": { "affinity": 0.8 },
+          "properties": {
+            "address": "Causeway Bay, Hong Kong",
+            "hours": {
+              "saturday": { "open": "06:00", "close": "23:00" }
+            }
+          },
+          "tags": [{ "name": "park" }]
+        },
+        {
+          "entity_id": "MOCK-PLACE-HKMOA",
+          "name": "Hong Kong Museum of Art",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:museum",
+          "query": { "affinity": 0.78 },
+          "properties": {
+            "address": "Tsim Sha Tsui, Hong Kong",
+            "hours": {
+              "saturday": { "open": "10:00", "close": "18:00" }
+            }
+          },
+          "tags": [{ "name": "museum" }]
+        },
+        {
+          "entity_id": "MOCK-PLACE-NOC",
+          "name": "NOC Coffee",
+          "types": ["urn:entity:place"],
+          "subtype": "urn:entity:place:cafe",
+          "query": { "affinity": 0.76 },
+          "properties": {
+            "address": "Sheung Wan, Hong Kong",
+            "hours": {
+              "saturday": { "open": "08:00", "close": "18:00" }
+            }
+          },
+          "tags": [{ "name": "cafe" }]
+        }
+      ]
+    },
+    "default": [
+      {
+        "entity_id": "MOCK-PLACE-VICTORIA",
+        "name": "Victoria Park",
+        "types": ["urn:entity:place"],
+        "subtype": "urn:entity:place:park",
+        "query": { "affinity": 0.8 },
+        "properties": {
+          "address": "Causeway Bay, Hong Kong",
+          "hours": {
+            "saturday": { "open": "06:00", "close": "23:00" }
+          }
+        },
+        "tags": [{ "name": "park" }]
+      },
+      {
+        "entity_id": "MOCK-PLACE-HKMOA",
+        "name": "Hong Kong Museum of Art",
+        "types": ["urn:entity:place"],
+        "subtype": "urn:entity:place:museum",
+        "query": { "affinity": 0.78 },
+        "properties": {
+          "address": "Tsim Sha Tsui, Hong Kong",
+          "hours": {
+            "saturday": { "open": "10:00", "close": "18:00" }
+          }
+        },
+        "tags": [{ "name": "museum" }]
+      },
+      {
+        "entity_id": "MOCK-PLACE-NOC",
+        "name": "NOC Coffee",
+        "types": ["urn:entity:place"],
+        "subtype": "urn:entity:place:cafe",
+        "query": { "affinity": 0.76 },
+        "properties": {
+          "address": "Sheung Wan, Hong Kong",
+          "hours": {
+            "saturday": { "open": "08:00", "close": "18:00" }
+          }
+        },
+        "tags": [{ "name": "cafe" }]
+      }
+    ]
+  }
+}

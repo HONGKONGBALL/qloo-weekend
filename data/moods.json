@@ -1,0 +1,92 @@
+{
+  "moods": [
+    {
+      "id": "outdoors",
+      "label": "Outdoors",
+      "blurb": "Two parks, then a cafe. All three are on Hong Kong Island.",
+      "stops": [
+        {
+          "placeId": "victoria-park",
+          "time": "Morning",
+          "reason": "Start outside on the Causeway Bay lawns. Picked because this mood asks for a park, not because of a score."
+        },
+        {
+          "placeId": "hong-kong-park",
+          "time": "Midday",
+          "reason": "Stay outdoors in the shade at Admiralty. A short MTR ride from Causeway Bay, not a walking loop."
+        },
+        {
+          "placeId": "noc-coffee",
+          "time": "Afternoon",
+          "reason": "Sit down in Sheung Wan after the parks. This cafe is only a local catalog entry, not a partner venue."
+        }
+      ]
+    },
+    {
+      "id": "culture",
+      "label": "Museums",
+      "blurb": "Three public museums in Kowloon. Allow travel time between Tsim Sha Tsui and West Kowloon.",
+      "stops": [
+        {
+          "placeId": "hk-museum-of-art",
+          "time": "Morning",
+          "reason": "Open the day at the harbourfront art museum. Local catalog pick for a museums mood."
+        },
+        {
+          "placeId": "hk-museum-of-history",
+          "time": "Midday",
+          "reason": "Stay in Tsim Sha Tsui for the history museum, a walk from the art museum rather than a new district."
+        },
+        {
+          "placeId": "m-plus",
+          "time": "Afternoon",
+          "reason": "End at M+ in West Kowloon. This is a second district, so leave time on the MTR. Hours are not checked."
+        }
+      ]
+    },
+    {
+      "id": "film",
+      "label": "A film",
+      "blurb": "A Kowloon afternoon that leaves room for one screening. Showtimes are not looked up.",
+      "stops": [
+        {
+          "placeId": "kowloon-park",
+          "time": "Morning",
+          "reason": "Begin in Kowloon Park so the day is not only indoors. Catalog pick, not a ranked suggestion."
+        },
+        {
+          "placeId": "hk-museum-of-art",
+          "time": "Midday",
+          "reason": "The art museum is a walk towards the harbour from the park, before the cinema."
+        },
+        {
+          "placeId": "broadway-cinematheque",
+          "time": "Afternoon",
+          "reason": "Leave the afternoon for one film at Broadway Cinematheque in Yau Ma Tei. No showtimes are fetched."
+        }
+      ]
+    },
+    {
+      "id": "quiet",
+      "label": "Quiet",
+      "blurb": "A smaller park-and-tea morning in Admiralty, then a cafe in Sheung Wan.",
+      "stops": [
+        {
+          "placeId": "hong-kong-park",
+          "time": "Morning",
+          "reason": "Hong Kong Park is the quiet outdoor start: ponds and shade rather than a large lawn."
+        },
+        {
+          "placeId": "flagstaff-house",
+          "time": "Midday",
+          "reason": "Flagstaff House is inside the same park, so the second stop does not add a journey."
+        },
+        {
+          "placeId": "cupping-room",
+          "time": "Afternoon",
+          "reason": "Move to a Sheung Wan cafe to sit and read. Hand-listed only. Not a measured match."
+        }
+      ]
+    }
+  ]
+}

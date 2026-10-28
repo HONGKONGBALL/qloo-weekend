@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: qloo-weekend
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: QLOO_MODE
+        value: auto
+      - key: QLOO_DOTENV
+        value: "off"
+      - key: QLOO_API_KEY
+        sync: false
